@@ -75,7 +75,7 @@ const Hero = () => {
                 ref={el => (titleRefs.current[index] = el)}
                 className="lg:text-[40px] sm:text-[26px] xs:text-[10px] dxs:text-[30px] font-semibold p-0 text-[#689775] m-0 items-center leading-[0] change"
               >
-                {title.head} Developer.
+                {title.head} Developer
               </p>
             ))}
           </motion.div>
