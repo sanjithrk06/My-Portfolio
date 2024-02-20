@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { keyframes, css } from "styled-components";
 import { styles } from "../styles";
-import { scss, sexpress, sgit, shtml, sjs, smongo, snode, sreact, sredux } from "../assets";
+import { scss, sexpress, sgit, shtml, sjs, smongo, snode, sreact, sredux } from "../index";
 
 function Tec() {
   const row1 = [

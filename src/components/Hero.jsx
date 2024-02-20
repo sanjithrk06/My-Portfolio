@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 import { fadeIn, textVariant, zoomIn } from "../utils/motion";
 
 import { styles } from "../styles";
-import { css, git, html, javascript, mongodb, nodejs, reactjs, redux, tailwind, } from '../assets/index';
+import { css, git, html, javascript, mongodb, nodejs, reactjs, redux, tailwind, } from '../index';
 
 const Hero = () => {
 

@@ -3,7 +3,7 @@ import { useWindowSize } from 'react-use';
 import { motion, AnimatePresence } from "framer-motion";
 
 import { navLinks } from "../constants";
-import { menu, close } from "../assets";
+import { menu, close } from "../index";
 
 export default function Navbar() {
   const [isScrolling, setIsScrolling] = useState(false);

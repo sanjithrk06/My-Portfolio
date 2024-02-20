@@ -16,14 +16,12 @@ import {
   tesla,
   shopify,
   carrent,
-  jobit,
-  tripguide,
   threejs,
   mobile1,
   home,
   user,
   project
-} from "../assets";
+} from "../index";
 
 export const navLinks = [
   {
