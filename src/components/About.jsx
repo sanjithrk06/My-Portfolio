@@ -9,7 +9,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 const ServiceCard = ({ index, title, icon }) => (
   <div className='dxs:w-[90%] sm:w-[250px] m-4'>
     <motion.div
-      variants={fadeIn("left", "spring", index * 0.5, 0.5)}
+      variants={fadeIn("up", "spring", index * 0.5, 0.5)}
       className='w-full p-[1px] rounded-[20px] shadow-card'
     >
       <div

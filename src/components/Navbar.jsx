@@ -118,7 +118,7 @@ function NavbarMobile() {
 
     return(
         <nav
-        className={`fixed z-10 flex justify-between px-4 py-2 rounded-md ts-bg right-[8%] ${
+        className={`fixed z-10 flex justify-between py-2 rounded-md ts-bg right-[8%] ${
             isScrolled ? "top-5" : "top-8"
           } bg-[#000] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 `}
       >
