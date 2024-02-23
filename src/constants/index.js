@@ -20,7 +20,11 @@ import {
   mobile1,
   home,
   user,
-  project
+  project,
+  travel,
+  email,
+  res,
+  aff
 } from "../index";
 
 export const navLinks = [
@@ -202,7 +206,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: travel,
     source_code_link: "https://github.com/sanjithrk06/Smart_Tourism.git",
   },
   {
@@ -223,7 +227,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: email,
     source_code_link: "https://github.com/sanjithrk06/Email-Spam-Detection.git",
   },
   {
@@ -244,7 +248,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: res,
     source_code_link: "https://github.com/",
   },
   {
@@ -265,7 +269,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: aff,
     source_code_link: "https://github.com/sanjithrk06/Affliate-Marketing.git",
   },
 ];

@@ -44,10 +44,19 @@ import shopify from "./assets/company/shopify.png";
 import starbucks from "./assets/company/starbucks.png";
 import tesla from "./assets/company/tesla.png";
 
+import aff from "./assets/project/affi.png";
+import email from "./assets/project/email.png";
+import res from "./assets/project/res.png";
+import travel from "./assets/project/travel.png";
+
 import carrent from "./assets/carrent.png";
 import jobit from "./assets/jobit.png";
 
 export {
+  aff,
+  email,
+  res,
+  travel,
   logo,
   backend,
   creator,

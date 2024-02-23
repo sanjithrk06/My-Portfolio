@@ -49,7 +49,7 @@ const Contact = () => {
           from_email: form.email,
           to_email: "sanjithkarthikeyanr@gmail.com",
           message: form.message,
-          mobile: form.mobile
+          from_mobile: form.mobile
         },
         '_Q80eCE1coadZhpCa'
         // import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
