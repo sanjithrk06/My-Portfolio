@@ -1,4 +1,5 @@
 import React from "react";
+import { SectionWrapper } from "../hoc";
 import styled, { keyframes, css } from "styled-components";
 import { styles } from "../styles";
 import { scss, sexpress, sgit, shtml, sjs, smongo, snode, sreact, sredux } from "../index";
@@ -43,7 +44,8 @@ function Tec() {
   );
 }
 
-export default Tec;
+export default SectionWrapper(Tec, "tech");
+
 
 const AppContainer = styled.div`
   width: 100%;

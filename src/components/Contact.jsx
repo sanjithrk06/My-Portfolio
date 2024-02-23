@@ -27,22 +27,32 @@ const Contact = () => {
     });
   };
 
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
+      //template_1gp8bvf
+  //service_2mhlt09
+  //_Q80eCE1coadZhpCa 
+
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        // import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        // import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_2mhlt09',
+        'template_1gp8bvf',
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Sanjith",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "sanjithkarthikeyanr@gmail.com",
           message: form.message,
+          mobile: form.mobile
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        '_Q80eCE1coadZhpCa'
+        // import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
@@ -52,6 +62,7 @@ const Contact = () => {
           setForm({
             name: "",
             email: "",
+            mobile: "",
             message: "",
           });
         },
@@ -66,7 +77,7 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-4 sm:mt-4 flex flex-col gap-5 overflow-hidden px-8 py-8 rounded-2xl`}
+      className={`xl:mt-4 sm:mt-4 dxs:mt-0 flex flex-col gap-5 overflow-hidden px-8 py-8 rounded-2xl`}
     >
       <motion.div variants={textVariant(0.3)} className=" block mt-10" >
         <p className={styles.sectionSubText}>Get in touch</p>
@@ -76,7 +87,7 @@ const Contact = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className=' text-secondary text-[17px] mb-12 max-w-3xl'
         >
-          Hate forms? Send me an <a href="mailto:sanjithkarthikeyanr@gmail.com" className=" cursor-pointer underline text-[#689775] hover:text-[#ec8476d9]">email</a> instead.
+          Hate forms? Send me an <a href="mailto:sanjithkarthikeyanr@gmail.com" className=" cursor-pointer active:text-[#689775] underline text-[#689775] hover:text-[#ec8476d9]">email</a> instead.
         </motion.p>
 
       </motion.div>
@@ -85,7 +96,7 @@ const Contact = () => {
         variants={textVariant()}
         className='flex-[100%] p-0 dxs:-mt-4 sm:mt-0 -ml-10'
       >
-        <motion.form
+        <form
            variants={fadeIn("up","tween",0.5, 1)} 
           ref={formRef}
           onSubmit={handleSubmit}
@@ -134,11 +145,19 @@ const Contact = () => {
 
           <button
             type='submit'
-            className='bg-[#191919] dxs:mx-10 sm:m-0 py-3 px-8 rounded-xl outline-none w-fit text-[#fb442c] font-bold shadow-md shadow-primary'
+            onSubmit={handleSubmit}
+            className='bg-[#191919] hover:scale-[1.08] dxs:ml-8 sm:m-0 py-3 px-8 rounded-xl outline-none w-fit text-[#fb442c] font-bold shadow-md shadow-primary'
           >
             {loading ? "Sending..." : "Send"}
           </button>
-        </motion.form>
+
+          {/* <button class="relative inline-flex items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-full group">
+            <span class="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-[#191919] opacity-[10%]"></span>
+            <span class="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-[#191919] opacity-100 group-hover:-translate-x-8"></span>
+            <span class="relative w-full text-left text-[#689775] transition-colors duration-200 ease-in-out group-hover:text-[#fb442c]">{loading ? "Connecting..." : "Connect"}</span>
+            <span class="absolute inset-0 border-[2px] border-[#191919bc] rounded-full"></span>
+          </button> */}
+        </form>
       </motion.div>
       </div>
   );

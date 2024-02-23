@@ -7,9 +7,9 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <div className='dxs:w-[90%] sm:w-[250px] m-4'>
+  <div className='dxs:w-[85%] sm:w-[250px] m-4'>
     <motion.div
-      variants={fadeIn("up", "spring", index * 0.5, 0.5)}
+      variants={fadeIn("left", "spring", index * 0.5, 0.5)}
       className='w-full p-[1px] rounded-[20px] shadow-card'
     >
       <div
@@ -36,7 +36,7 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const About = () => {
   return (
-    <>
+    <div className=" mt-2 mx-2">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -58,7 +58,7 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

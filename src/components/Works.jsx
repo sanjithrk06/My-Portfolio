@@ -1,5 +1,4 @@
 import React from "react";
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -7,6 +6,17 @@ import { github } from "../index";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+
+//swiper
+import { Swiper, SwiperSlide } from "swiper/react";
+
+//swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/free-mode";
+
+//module
+import { FreeMode, Pagination, Mousewheel } from "swiper/modules";
 
 const ProjectCard = ({
   index,
@@ -17,14 +27,9 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("right", "spring", index * 0.5, 0.5)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 500,
-        }}
-        className='modgray-red-gradient p-5 rounded-2xl sm:w-[320px] w-full'
+    <motion.div variants={fadeIn("left", "spring", index * 0.5, 0.5)}>
+      <div
+        className='modgray-red-gradient p-5 rounded-2xl dxs:w-[300px] sm:w-[320px] w-full'
       >
         <div className='relative w-full h-[180px]'>
           <img
@@ -62,7 +67,7 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-      </Tilt>
+      </div>
     </motion.div>
   );
 };
@@ -70,7 +75,7 @@ const ProjectCard = ({
 const Works = () => {
 
   return (
-    <>
+    <div className=" mt-4 mx-2">
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
@@ -86,12 +91,55 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className=' flex flex-wrap mt-20 mx-2 gap-7'>
+      <div className=' flex flex-wrap mt-20 dxs:mx-4 sm:mx-4 dxs:gap-4 justify-around'>
+        <Swiper
+                  breakpoints={{
+                    340: {
+                      slidesPerView: 1,
+                      spaceBetween: 15,
+                    },
+                    480: {
+                      slidesPerView: 1.25,
+                      spaceBetween: 15,
+                    },
+                    680: {
+                      slidesPerView: 1.5,
+                      spaceBetween: 15,
+                    },
+                    800: {
+                      slidesPerView: 2,
+                      spaceBetween: 15,
+                    },
+                    1000: {
+                      slidesPerView: 2.5,
+                      spaceBetween: 15,
+                    },
+                    1200: {
+                      slidesPerView: 3,
+                      spaceBetween: 15,
+                    },
+                  }}
+                  freeMode={true}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  mousewheel={true}
+                  speed={15}
+                  modules={[FreeMode, Pagination, Mousewheel]}
+                  className="mySwiper max-w-[100%] scroll-smooth h-[30rem] cursor-pointer gradient-mask-r-90"
+        >
+          
           {projects.map((project, index) => (
-            <ProjectCard key={`project-${index}`} index={index} {...project} />
+            <SwiperSlide>
+            
+              <ProjectCard key={`project-${index}`} index={index} {...project} />
+          
+            </SwiperSlide>
           ))}
+          
+        </Swiper>
       </div>
-    </>
+    </div>
   );
 };
 

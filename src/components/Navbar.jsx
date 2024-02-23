@@ -125,14 +125,14 @@ function NavbarMobile() {
             <img
             src={toggle ? close : menu}
             alt='menu'
-            className='w-[28px] h-[28px] object-contain'
+            className='w-[20px] h-[20px] z-20 object-contain'
             onClick={() => setToggle(!toggle)}
             />
 
             <div
             className={`${
                 !toggle ? "hidden" : "flex"
-            } p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl bg-[#000000ca] bg-clip-padding backdrop-filter backdrop-blur-[20px] bg-opacity-5 border border-gray-50`}
+            } p-6 absolute top-0 right-0 mx-0 -my-2 min-w-[140px] z-10 rounded-xl bg-[#000000ca] bg-clip-padding backdrop-filter backdrop-blur-[20px] bg-opacity-5 border border-gray-50`}
             >
                 <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
                     {navLinks.map((nav) => (
