@@ -210,9 +210,30 @@ const projects = [
     source_code_link: "https://github.com/sanjithrk06/Smart_Tourism.git",
   },
   {
+    name: "Auction Website",
+    description:
+    "Cutting-edge auction platform enabling users to seamlessly bid, purchase, and manage items, fostering an engaging marketplace with transparency and efficiency as its hallmark.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: res,
+    source_code_link: "https://github.com/",
+  },
+  {
     name: "Email Spam Detection",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Innovative web-based solution utilizing cutting-edge algorithms to detect and mitigate email spam, safeguarding inboxes and ensuring seamless communication experiences for users worldwide.",
     tags: [
       {
         name: "python",
@@ -233,7 +254,7 @@ const projects = [
   {
     name: "Restaurant Website",
     description:
-    "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    "Sophisticated online hub enabling diners to seamlessly explore, reserve, and oversee table bookings and pre-order meals, enhancing restaurant experiences with simplicity and convenience.",
     tags: [
       {
         name: "html",
@@ -254,7 +275,7 @@ const projects = [
   {
     name: "Markater Portfolio",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web platform empowering users to effortlessly discover, book, and manage car rentals from diverse providers, streamlining transportation solutions with ease and efficiency.",
     tags: [
       {
         name: "html",
