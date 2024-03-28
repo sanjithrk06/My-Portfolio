@@ -111,7 +111,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="Name"
-              className={`bg-transparent py-4 px-3 placeholder:text-secondary text-white rounded-none outline-none border-b-2 border-secondary font-medium ${errors.name ? 'border-red-500' : ''}`}
+              className={`bg-transparent py-4 px-3 placeholder:text-white/60 text-white rounded-none outline-none border-b-2 border-gray-400 font-medium ${errors.name ? 'border-red-500' : ''}`}
             />
             <p className=" h-1">{errors.name && <span className="text-red-500 text-sm">* {errors.name}</span>}</p>
           </label>
@@ -122,7 +122,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="Email address"
-              className={`bg-transparent py-4 px-3 placeholder:text-secondary text-white rounded-none outline-none border-b-2 border-secondary font-medium ${errors.email ? 'border-red-500' : ''}`}
+              className={`bg-transparent py-4 px-3 placeholder:text-white/60 text-white rounded-none outline-none border-b-2 border-gray-400 font-medium ${errors.email ? 'border-red-500' : ''}`}
             />
             <p className=" h-1">{errors.email && <span className="text-red-500 text-sm">* {errors.email}</span>}</p>
           </label>
@@ -133,7 +133,7 @@ const Contact = () => {
               value={form.mobile}
               onChange={handleChange}
               placeholder="Mobile number"
-              className={`bg-transparent py-4 px-3 placeholder:text-secondary text-white rounded-none outline-none border-b-2 border-secondary font-medium ${errors.mobile ? 'border-red-500' : ''}`}
+              className={`bg-transparent py-4 px-3 placeholder:text-white/60 text-white rounded-none outline-none border-b-2 border-gray-400 font-medium ${errors.mobile ? 'border-red-500' : ''}`}
             />
             <p className=" h-1">{errors.mobile && <span className="text-red-500 text-sm">* {errors.mobile}</span>}</p>
           </label>
@@ -144,7 +144,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder='What you want to say?'
-              className={`bg-transparent py-4 px-3 placeholder:text-secondary text-white rounded-none outline-none border-b-2 border-secondary font-medium ${errors.message ? 'border-red-500' : ''}`}
+              className={`bg-transparent py-4 px-3 placeholder:text-white/60 text-white rounded-none outline-none border-b-2 border-gray-400 font-medium ${errors.message ? 'border-red-500' : ''}`}
             />
             <p className=" h-1">{errors.message && <span className="text-red-500 text-sm">* {errors.message}</span>}</p>
           </label>
