@@ -98,7 +98,7 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
         <p className='text-secondary text-[17px] mb-12 max-w-3xl'>
-          Hate forms? Send me an <a href="mailto:sanjithkarthikeyanr@gmail.com" className="cursor-pointer active:text-[#689775] underline text-[#689775] hover:text-[#ec8476d9]">email</a> instead.
+          Hate forms? Send me an <a href="mailto:sanjithkarthikeyanr@gmail.com" target="_blank" className="cursor-pointer active:text-[#689775] underline text-[#689775] hover:text-[#ec8476d9]">email</a>/<a href="https://wa.me/9944235449" target="_blank" className="cursor-pointer active:text-[#689775] underline text-[#689775] hover:text-[#ec8476d9]">whatsapp</a>  instead.
         </p>
       </div>
 
