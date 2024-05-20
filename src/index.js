@@ -48,6 +48,7 @@ import aff from "./assets/project/affi.png";
 import email from "./assets/project/email.png";
 import res from "./assets/project/res.png";
 import travel from "./assets/project/travel.png";
+import event from "./assets/project/event.png";
 
 import carrent from "./assets/carrent.png";
 import jobit from "./assets/jobit.png";
@@ -101,4 +102,5 @@ export {
   user,
   mobile1,
   project,
+  event,
 };

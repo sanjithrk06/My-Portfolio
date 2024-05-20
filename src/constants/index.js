@@ -22,6 +22,7 @@ import {
   user,
   project,
   travel,
+  event,
   email,
   res,
   aff
@@ -52,7 +53,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Application Developer",
     icon: backend,
   },
   {
@@ -193,6 +194,23 @@ const testimonials = [
 const projects = [
 
   {
+    name: "College Event Website",
+    description:
+      "Website experiences the buzz of campus events firsthand! Explore schedules, venue details, and more, all in one accessible platform. ",
+    tags: [
+      {
+        name: "react",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: event,
+    source_code_link: "https://github.com/sanjithrk06/bit-vprayukti.git",
+  },
+  {
     name: "Smart Tourism",
     description:
       "Web application that enables users to search for tourist places, view nearby places & restaurants with distance and location based on their current location. And also provides tour packages.",
@@ -212,7 +230,7 @@ const projects = [
   {
     name: "Auction Website",
     description:
-    "Cutting-edge auction platform enabling users to seamlessly bid, purchase, and manage items, fostering an engaging marketplace with transparency and efficiency as its hallmark.",
+    "Cutting-edge auction platform enabling users to seamlessly bid, purchase, fostering an engaging marketplace with transparency and efficiency as its hallmark.",
     tags: [
       {
         name: "html",
@@ -233,7 +251,7 @@ const projects = [
   {
     name: "Email Spam Detection",
     description:
-      "Innovative web-based solution utilizing cutting-edge algorithms to detect and mitigate email spam, safeguarding inboxes and ensuring seamless communication experiences for users worldwide.",
+      "Innovative web-based solution utilizing cutting-edge algorithms to detect and mitigate email spam, safeguarding inboxes and ensuring seamless communication experiences",
     tags: [
       {
         name: "python",
@@ -254,7 +272,7 @@ const projects = [
   {
     name: "Restaurant Website",
     description:
-    "Sophisticated online hub enabling diners to seamlessly explore, reserve, and oversee table bookings and pre-order meals, enhancing restaurant experiences with simplicity and convenience.",
+    "Sophisticated online hub enabling diners to seamlessly explore, reserve, and oversee table bookings and pre-order meals, enhancing restaurant experiences with convenience.",
     tags: [
       {
         name: "html",

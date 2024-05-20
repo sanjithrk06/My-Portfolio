@@ -126,7 +126,7 @@ const Works = () => {
                   mousewheel={true}
                   speed={15}
                   modules={[FreeMode, Pagination, Mousewheel]}
-                  className="mySwiper max-w-[100%] scroll-smooth h-[30rem] cursor-pointer gradient-mask-r-90"
+                  className="mySwiper max-w-[100%] scroll-smooth h-[30rem] gradient-mask-r-95"
         >
           
           {projects.map((project, index) => (
