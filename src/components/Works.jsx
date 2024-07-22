@@ -29,7 +29,7 @@ const ProjectCard = ({
   return (
     <motion.div variants={fadeIn("left", "spring", index * 0.5, 0.5)}>
       <div
-        className='modgray-red-gradient p-5 rounded-2xl dxs:w-[300px] sm:w-[320px] w-full'
+        className='modgray-red-gradient p-5 rounded-2xl dxs:w-[300px] sm:w-[320px] h-[420px] w-full'
       >
         <div className='relative w-full h-[180px]'>
           <img
@@ -52,21 +52,21 @@ const ProjectCard = ({
           </div>
         </div>
 
-        <div className='mt-5'>
-          <h3 className='text-[#689775] font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-[#ffffffd8] text-[14px]'>{description}</p>
+        <div className='mt-5 flex flex-col'>
+          <h3 className='text-[#689775] font-bold text-[24px] h-1/4'>{name}</h3>
+          <p className='mt-2 text-[#ffffffd8] text-[14px] truncate-multiline'>{description}</p>
+          <div className='mt-4 flex flex-wrap gap-2 h-1/4'>
+            {tags.map((tag) => (
+              <p
+                key={`${name}-${tag.name}`}
+                className={`text-[14px] ${tag.color}`}
+              >
+                #{tag.name}
+              </p>
+            ))}
+          </div>
         </div>
 
-        <div className='mt-4 flex flex-wrap gap-2'>
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
-        </div>
       </div>
     </motion.div>
   );

@@ -49,11 +49,14 @@ import email from "./assets/project/email.png";
 import res from "./assets/project/res.png";
 import travel from "./assets/project/travel.png";
 import event from "./assets/project/event.png";
+import api from "./assets/project/api.jpg";
+import recipe from "./assets/project/recipe.png";
 
 import carrent from "./assets/carrent.png";
 import jobit from "./assets/jobit.png";
 
 export {
+  api,
   aff,
   email,
   res,
@@ -103,4 +106,5 @@ export {
   mobile1,
   project,
   event,
+  recipe
 };

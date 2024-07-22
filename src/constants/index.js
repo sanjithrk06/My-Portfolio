@@ -25,7 +25,9 @@ import {
   event,
   email,
   res,
-  aff
+  aff,
+  api,
+  recipe
 } from "../index";
 
 export const navLinks = [
@@ -53,7 +55,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Application Developer",
+    title: "RESTful API Developer",
     icon: backend,
   },
   {
@@ -65,7 +67,7 @@ const services = [
     icon: mobile,
   },
   {
-    title: "MERN Stack Developer",
+    title: "Full Stack Developer",
     icon: web,
   },
 ];
@@ -194,7 +196,36 @@ const testimonials = [
 const projects = [
 
   {
-    name: "College Event Website",
+    name: "EZLIL",
+    description:
+      "A RESTful API for the Ezlil e-commerce website manages core functionalities with inventory management.",
+    tags: [
+      {
+        name: "nodejs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "expressjs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongoDB",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "mongoose",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ongoing",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: api,
+    source_code_link: "https://github.com/sanjithrk06/Ezlil-API",
+  },
+  {
+    name: "V-Prayukti'24",
     description:
       "Website experiences the buzz of campus events firsthand! Explore schedules, venue details, and more, all in one accessible platform. ",
     tags: [
@@ -228,26 +259,47 @@ const projects = [
     source_code_link: "https://github.com/sanjithrk06/Smart_Tourism.git",
   },
   {
-    name: "Auction Website",
+    name: "Recipe Maker",
     description:
-    "Cutting-edge auction platform enabling users to seamlessly bid, purchase, fostering an engaging marketplace with transparency and efficiency as its hallmark.",
+      "A user-friendly web application with drag-and-drop functionality for cooking enthusiasts to create and download recipes.",
     tags: [
       {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
+        name: "reactjs",
         color: "green-text-gradient",
       },
       {
-        name: "js",
-        color: "pink-text-gradient",
+        name: "tailwindcss",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "ongoing",
+        color: "blue-text-gradient",
       },
     ],
-    image: res,
-    source_code_link: "https://github.com/",
+    image: recipe,
+    source_code_link: "https://github.com/sanjithrk06/Recipe-Maker.git",
   },
+  // {
+  //   name: "Auction Website",
+  //   description:
+  //   "Cutting-edge auction platform enabling users to seamlessly bid, purchase, fostering an engaging marketplace with transparency and efficiency as its hallmark.",
+  //   tags: [
+  //     {
+  //       name: "html",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "js",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: res,
+  //   source_code_link: "https://github.com/sanjithrk06",
+  // },
   {
     name: "Email Spam Detection",
     description:
@@ -288,7 +340,7 @@ const projects = [
       },
     ],
     image: res,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/sanjithrk06",
   },
   {
     name: "Markater Portfolio",
